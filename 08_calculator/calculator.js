@@ -17,6 +17,10 @@ const sum = function(arr) {
 };
 
 const multiply = function(arr) {
+  if (n === 0) {
+    return 1;
+  }
+  
   let product = 1;
 
   for (let i = 0; i < arr.length; i++) {
@@ -31,6 +35,10 @@ const power = function(x, n) {
 };
 
 const factorial = function(n) {
+  if (n === 0) {
+    return 1;
+  }
+  
 	let result = 1;
   
   for (let i = n; i > 0; i--) {
